@@ -1,0 +1,80 @@
+﻿@font-face {
+  font-family: 'PingFang Medium';   /*字体名称*/
+  src: url('../font/PingFang Medium.ttf');       /*字体源文件*/
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, strong, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, strong, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    font-family: 'pingFang medium';
+    font-weight: normal;
+    outline: none;
+}
+
+
+html,body {
+		height: 100%;
+    color: #333;
+    font: 400 10px 'PingFang Medium';
+    -webkit-tap-highlight-color:transparent;
+    background: #FFF;
+}
+em, i, strong {
+    font-style: normal;
+}
+
+ol, ul,li{
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+input[type=button],input[type=text],input[type=password],input[type=number],input[type=submit],textarea{
+		-webkit-appearance:none;
+		outline:none;/*去除input默认样式*/
+	  resize: none;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+
+　　color:#999;
+
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+　　color:#999;
+
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+　　color:#999;
+
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+
+　　color:#999;
+
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+

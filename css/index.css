@@ -1,0 +1,349 @@
+﻿@charset "utf-8";
+
+
+#main{
+	width: 10rem;
+    height: 17.79rem;
+    position: relative;
+}
+.main_con{
+	width: 10rem;
+	height: 17.79rem;
+	position: relative;
+	color: #FFFFFF;
+	background-size: 100%;
+}
+.main_con>img{
+	position: absolute;
+    top: .24rem;
+    right: .37rem;
+    z-index: 3;
+    width: 3.26rem;
+    height: 5.19rem;
+}
+.con_fill{
+	width: 100%;
+	position: absolute;
+	top: 8.2rem;
+	z-index: 2;
+}
+.con_fill h1{
+    font-size: 0.64rem;
+    text-align: center;
+    margin-bottom: 1.15rem;
+}
+.con_fill label{
+	margin: 0 .43rem 0 1.2rem;
+    font-size: .53rem;
+}
+.con_fill input{
+	width: 6.37rem;
+    height: .73rem;
+    margin-bottom: .8rem;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(255,255,255,.2);
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #FFF;
+}
+.con_fill .btn_temp{
+	display: block;
+    width: 3.67rem;
+    height: .85rem;
+    font-size: .37rem;
+    margin: 0 auto;
+    color: #FFF;
+    border-radius: .13rem;
+    border: 1px solid rgba(3,0,0,.6);
+    background-color: rgba(3,0,0,.6);
+}
+.love_txt{
+	font-size: .63rem;
+    width: .63rem;
+    margin: 0 auto;
+    line-height: .66rem;
+    position: absolute;
+    top: 5.6rem;
+    right: .37rem;
+    color: rgba(157,157,232,.4);
+}
+.couple{
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    margin-left: -1.49rem;
+    text-align: center;
+    z-index: 1;
+    animation:grow 0.7s 0.4s 1 ease, music-move 1s 3.3s infinite alternate ease-in-out;
+}
+.couple>img{
+	width: 2.99rem;
+    height: 14.55rem;
+}
+.main_foo{
+	position: absolute;
+	bottom: .27rem;
+	font-size: .27rem;
+	width: 100%;
+	text-align: center;
+}
+@keyframes grow
+{
+0% {  
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+60% {  
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+80% {  
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+100% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+}
+
+@-webkit-keyframes grow /* Safari and Chrome */
+{
+0% {  
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+60% {  
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+80% {  
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+100% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+}
+@keyframes music-move
+{
+0% { 
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+} 
+33% {  
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+66% {  
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+100% {  
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+}
+
+@-webkit-keyframes music-move /* Safari and Chrome */
+{
+0% { 
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+33% {  
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+66% {  
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+100% {  
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+}
+
+/*页面2*/
+.template{
+	position: absolute;
+    top: .51rem;
+    width: 100%;
+}
+.temp_top , .temp_btm{
+	padding: 0 .48rem 0;
+}
+.temp_top span , .temp_btm span{
+	width: 3.6rem;
+    height: .75rem;
+    line-height: .75rem;
+    text-align: center;
+    border: 1px solid #699bff;
+    border-radius: 10px;
+    color: #699bff;
+    margin-bottom: .53rem;
+}
+.imgs{
+	width: 100%;
+	overflow: hidden;
+}
+
+.imgs li{
+	float: left;
+	padding: .2rem;
+	border-radius: 10px;
+	border: 1px solid transparent;
+}
+.imgs li img{
+	width: 4rem;
+	height: 2.72rem;
+}
+.imgs .selected {
+    border: 1px solid #699bff;
+    transition: all .5s;
+}
+.imgs li:nth-of-type(2n+1){
+	margin-right: .08rem;
+}
+.btn_full{
+	width: 3.95rem;
+    height: .77rem;
+    display: block;
+    margin: .07rem auto 0;
+    border: 1px solid #699bff;
+    background: none;
+    border-radius: 10px;
+    font-size: .37rem;
+    color: #699bff;
+}
+
+/*页面3*/
+.blessing{
+	position: absolute;
+    top: 4.21rem;
+    width: 100%;
+}
+.blessing span , .blessing .btn_generate{
+	width: 3.87rem;
+    height: .75rem;
+    line-height: .75rem;
+    margin: 0 auto .77rem;
+    display: block;
+    text-align: center;
+    font-size: .37rem;
+    border: 1px solid #6492f4;
+    border-radius: 10px;
+    background: rgba(100,146,244,.4);
+    color: #adcbfd;
+}
+.ble_con{
+	display: block;
+	width: 9.07rem;
+    height: 7.49rem;
+    margin: 0 auto .8rem;
+    border: 1px solid #6492f4;
+    border-radius: 10px;
+    background: rgba(100,146,244,.4);
+    color: #adcbfd;
+    padding: .53rem .24rem;
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder{
+	color: #adcbfd;
+	font-size: .37rem;
+}
+/*页面4*/
+
+.share{
+	position: relative;
+    top: 4.68rem;
+    width: 100%;
+    padding: 0 .32rem;
+    box-sizing: border-box;
+}
+.share_con{
+	width: 9.39rem;
+    height: 9.52rem;
+    border: .25rem solid #6DB6F8;
+    background-color: #6DB6F8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+.share_con>img{
+	width: 8.88rem;
+	height: 9.01rem;
+}
+.show_txt{
+    position: absolute;
+    top: 3.13rem;
+    width: 100%;
+    height: 5.9rem;
+    color: rgba(50,68,199,.8);
+}
+.show_name{
+	position: absolute;
+    top: 1.73rem;
+    width: 100%;
+    text-align: center;
+    font-size: .53rem;
+}
+.show_name img{
+	margin: 0 .56rem;
+    width: .68rem;
+    height: .52rem;
+}
+.show_txt .sent{
+	position: absolute;
+    top: 2.65rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: .37rem;
+}
+.btn_share{
+	width: 4.16rem;
+	height: .72rem;
+	position:absolute;
+	top: 10rem;
+	left: 50%;
+	margin-left: -2.08rem;
+	font-size: .37rem;
+	color: rgba(50,68,199,.8);
+	border: 1px solid #6DB6F8;
+	border-radius: 10px;
+	background: rgba(255,255,255,.2);
+}
+
+.share_date{
+    width: 10rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background: rgba(0,0,0,.6);
+    display: none;
+}
+.share_date_con{
+    width: inherit;
+    height: 8.73rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+    background-image: url(../images/share.jpg);
+    background-size: 100% 100%;
+}
+
+.cancel{
+	display: block;
+	position: absolute;
+    width: 10rem;
+    height: 1rem;
+    bottom: .1rem;
+    z-index: 7;
+    color: #474746;
+    font-size: .5rem;
+    text-align: center;
+}
